@@ -793,11 +793,13 @@ export const MOCK_TEAM: TeamMemberItemImport[] = [];
 export const fetchTeamMembers = async (): Promise<TeamMemberItemImport[]> => {
   try {
     const response = await api.get('/team');
-    return response.data.data;
+    if (response.data && Array.isArray(response.data.data) && response.data.data.length > 0) {
+      return response.data.data;
+    }
   } catch (error) {
-    console.error('Failed to fetch team members from API:', error);
-    return [];
+    console.warn('Failed to fetch team members from API, using static dataset:', error);
   }
+  return STATIC_TEAM;
 };
 
 export const addAdminTeamMember = async (formData: FormData) => {
