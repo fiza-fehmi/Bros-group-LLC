@@ -94,7 +94,7 @@ export const STATIC_TEAM: TeamMemberItem[] = [
     tier: 'Tier 1: Executive Leadership',
     photoUrl: '/images/anus-ahmed-khan.jpg',
     bio: 'Tech architect specializing in enterprise AI solutions, scalable cloud systems, and engineering leadership.',
-    linkedinUrl: 'https://linkedin.com',
+    linkedinUrl: 'https://www.linkedin.com/in/anus-ahmed-khan',
     githubUrl: 'https://github.com',
     order: 2
   }
