@@ -77,12 +77,12 @@ export const STATIC_TEAM: TeamMemberItem[] = [
   {
     _id: 'team-1',
     name: 'Muhammad Ali Zaheer',
-    role: 'Chief Executive Officer (CEO)',
+    role: 'Founder & CEO',
     department: 'Executive Leadership',
     tier: 'Tier 1: Executive Leadership',
     photoUrl: '/images/muhammad-ali.jpg',
     bio: 'Visionary tech entrepreneur leading Bros Group LLC into global software and AI excellence.',
-    linkedinUrl: 'https://linkedin.com',
+    linkedinUrl: 'https://www.linkedin.com/in/muhammadali0fficial/?isSelfProfile=false',
     githubUrl: 'https://github.com',
     order: 1
   },

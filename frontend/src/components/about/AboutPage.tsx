@@ -108,7 +108,7 @@ export default function AboutPage() {
                   <p className="text-[11px] text-slate-300">Bros Group LLC (2019 – Present)</p>
                   <div className="pt-2">
                     <a
-                      href="https://www.linkedin.com/in/muhammadali0fficial?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                      href="https://www.linkedin.com/in/muhammadali0fficial/?isSelfProfile=false"
                       target="_blank"
                       rel="noreferrer"
                       className="inline-flex items-center space-x-1.5 text-xs font-bold text-white bg-[#0A66C2] hover:bg-[#004182] px-3 py-1.5 rounded-lg transition-colors shadow-sm"
