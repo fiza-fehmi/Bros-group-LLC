@@ -183,10 +183,18 @@ export default function TeamPage() {
 
 function TeamCard({ mem, idx }: { mem: TeamMemberItem; idx: number }) {
   let fallbackImage = '/images/about-hero.jpg';
+  let linkedinUrl = mem.linkedinUrl;
+
   if (mem.name?.includes('Muhammad Ali') || mem.name?.includes('Zaheer')) {
     fallbackImage = '/images/muhammad-ali.jpg';
-  } else if (mem.name?.includes('Anus') || mem.name?.includes('Ahmad')) {
+    if (!linkedinUrl || linkedinUrl.trim() === '' || linkedinUrl === 'https://linkedin.com') {
+      linkedinUrl = 'https://www.linkedin.com/in/muhammadali0fficial/?isSelfProfile=false';
+    }
+  } else if (mem.name?.includes('Anus') || mem.name?.includes('Ahmad') || mem.name?.includes('Ahmed')) {
     fallbackImage = '/images/anus-ahmed-khan.jpg';
+    if (!linkedinUrl || linkedinUrl.trim() === '' || linkedinUrl === 'https://linkedin.com') {
+      linkedinUrl = 'https://www.linkedin.com/in/anus-ahmed-khan';
+    }
   }
 
   const isApiUpload = mem.photoUrl?.startsWith('/uploads/');
@@ -231,10 +239,10 @@ function TeamCard({ mem, idx }: { mem: TeamMemberItem; idx: number }) {
           </div>
         )}
 
-        {mem.linkedinUrl && (
+        {linkedinUrl && (
           <div className="pt-2 flex items-center text-slate-400">
             <a
-              href={mem.linkedinUrl}
+              href={linkedinUrl}
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center space-x-1.5 text-xs font-semibold text-[#0A66C2] hover:text-[#004182] bg-blue-50 px-2.5 py-1 rounded-md transition-colors"
