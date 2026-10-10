@@ -3,7 +3,7 @@ import { ConsultancyPayload, JobItem, JobApplicationPayload, GalleryItemData } f
 import { processUploadFile } from '@/lib/fileUpload';
 import { sendFormEmail } from '@/lib/emailService';
 import { sendToGoogleSheets } from '@/lib/googleSheets';
-import { STATIC_JOBS } from '@/lib/staticData';
+import { STATIC_JOBS, STATIC_TEAM } from '@/lib/staticData';
 
 export const getDynamicApiBaseUrl = () => {
   let envUrl = process.env.NEXT_PUBLIC_API_URL;
